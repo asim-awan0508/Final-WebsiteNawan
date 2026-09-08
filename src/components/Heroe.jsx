@@ -7,12 +7,14 @@ import haroon from '../assets/haroon.jpg'
 import zeeshan from '../assets/zeeshan.png'
 // TODO: no "malik-rafiq.jpg" exists in src/assets — add a real photo for
 // Malik Rafiq / the other placeholder entries below and swap it in.
-import elder from '../assets/elder.jpg'
-const malikRafiqPlaceholder = elder
+import rafiqPic from '../assets/rafiq.jpg'
+import ibrarPic from '../assets/ibrar.jpg'
+
+
 
 const HEROES = [
   {
-    image: malikRafiqPlaceholder,
+    image: rafiqPic,
     role: 'Community Elder & Community Leader',
     name: 'Malik Rafiq',
     bio: 'Malik Rafiq Sahib is one of the most respected and senior members of Nawan. At more than 80 years of age, he continues to play an important role in the development and progress of the village. He works with different communities and helps bring people together for important community projects.',
@@ -37,7 +39,7 @@ const HEROES = [
     ],
   },
   {
-    image: malikRafiqPlaceholder,
+    image: rafiqPic,
     role: 'Eye Specialist & Community Figure',
     name: 'Dr. Amir Awan',
     bio: 'Dr. Amir Awan is an eye specialist and the elder brother of Dr. Irfan Sahib. He is a respected member of Nawan and is also connected with Jaba Farmhouse, one of the special places associated with the community and its social life.',
@@ -63,7 +65,7 @@ const HEROES = [
     ],
   },
   {
-    image: malikRafiqPlaceholder,
+    image: rafiqPic,
     role: 'Eye Specialist & Community Figure',
     name: 'Dr. Akmal Awan',
     bio: 'Dr. Akmal Awan Sahib is an eye specialist who belongs to Nawan and currently lives in Jawabad. He is a hardworking professional who continues to serve people through his field and remains connected with his community and country.',
@@ -73,18 +75,6 @@ const HEROES = [
     'Belongs to Nawan',
     'Currently lives and works in Jawabad',
     'Known for his professional service and dedication',
-    ],
-  },
-  {
-    image: malikRafiqPlaceholder,
-    role: 'Community Elder & Community Leader',
-    name: 'Malik Rafiq',
-    bio: 'Malik Rafiq Sahib is one of the most respected and senior members of Nawan. At more than 80 years of age, he continues to play an important role in the development and progress of the village. He works with different communities and helps bring people together for important community projects.',
-    quote: 'He plays a major role in supporting community projects, communicating with different communities, helping arrange funds, and bringing people together for the development of Nawan.',
-    points: [
-      'A respected elder of Nawan with more than 80 years of life experience',
-      'Supports different development projects in the village',
-      'Works with different communities to help arrange funds and support',
     ],
   },
   {
@@ -118,7 +108,7 @@ const HEROES = [
     ],
   },
   {
-    image: malikRafiqPlaceholder,
+    image: ibrarPic,
     role: 'PhD in Chemistry',
     name: 'Muhammad Ibrar Hussain',
     bio: 'Muhammad Ibrar Hussain is a hardworking and ambitious professional from Nawan who is associated with Italy and has completed a PhD in Chemistry. His academic journey and dedication represent the educational achievements and potential of the people of Nawan.',
