@@ -9,6 +9,10 @@ import zeeshan from '../assets/zeeshan.png'
 // Malik Rafiq / the other placeholder entries below and swap it in.
 import rafiqPic from '../assets/rafiq.jpg'
 import ibrarPic from '../assets/ibrar.jpg'
+<<<<<<< HEAD
+=======
+import akmalPic from '../assets/malikakmal.jpeg'
+>>>>>>> 40dd150 (Add new team images and update Heroe/vite config)
 
 
 
@@ -65,7 +69,11 @@ const HEROES = [
     ],
   },
   {
+<<<<<<< HEAD
     image: rafiqPic,
+=======
+    image: akmalPic,
+>>>>>>> 40dd150 (Add new team images and update Heroe/vite config)
     role: 'Eye Specialist & Community Figure',
     name: 'Dr. Akmal Awan',
     bio: 'Dr. Akmal Awan Sahib is an eye specialist who belongs to Nawan and currently lives in Jawabad. He is a hardworking professional who continues to serve people through his field and remains connected with his community and country.',
