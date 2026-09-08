@@ -1,0 +1,180 @@
+.nawanWelcome {
+ background-image: url('../assets/welcome2pic.png');
+ background-size: cover;
+ background-position: center;
+
+  padding: 4.5rem 0;
+  overflow: hidden;
+}
+
+.nawanWelcomeInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.nawanWelcomeContent {
+  max-width: 560px;
+}
+
+.nawanWelcomeTitle {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 700;
+  color: var(--color-brick);
+  margin: 0 0 1rem;
+  line-height: 1;
+}
+
+.nawanWelcomeLede {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: white;
+  margin-bottom: 2rem;
+  max-width: 480px;
+}
+
+/* Buttons */
+.nawanWelcomeActions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.nawanBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.6rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.98rem;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.nawanBtnPrimary {
+  background-color: var(--color-brick);
+  color: var(--color-cream-soft);
+  text-decoration: none;
+  
+}
+
+.nawanBtnPrimary:hover {
+  background-color: var(--color-brick-dark);
+  transform: translateY(-2px);
+}
+
+.nawanBtnOutline {
+  background-color: transparent;
+  border-color: var(--color-green);
+  color: var(--color-green);
+  text-decoration: none;
+}
+
+.nawanBtnOutline:hover {
+  background-color: var(--color-green);
+  color: var(--color-cream-soft);
+  transform: translateY(-2px);
+}
+
+/* Stats row */
+.nawanWelcomeStats {
+  display: flex;
+  gap: 2.25rem;
+  border-top: 1px solid rgba(43, 36, 32, 0.15);
+  padding-top: 1.5rem;
+}
+
+.nawanStat {
+  display: flex;
+  flex-direction: column;
+}
+
+.nawanStatNum {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-brick);
+  line-height: 1.1;
+}
+
+.nawanStatLabel {
+  font-size: 0.8rem;
+  color: var(--color-ink);
+  opacity: 0.75;
+  margin-top: 0.15rem;
+}
+
+/* Visual */
+.nawanWelcomeVisual {
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nawanVisualRing {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: var(--color-gold);
+  border: 10px solid var(--color-cream-soft);
+  box-shadow: 0 0 0 2px var(--color-gold-soft), 0 20px 40px rgba(43, 36, 32, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nawanVisualIcon {
+  font-size: 8rem;
+  color: var(--color-brick-dark);
+}
+
+.nawanVisualChip {
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-green-dark);
+  color: var(--color-cream-soft);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  box-shadow: 0 6px 16px rgba(43, 36, 32, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .nawanWelcomeInner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nawanWelcomeContent {
+    max-width: 100%;
+  }
+
+  .nawanWelcomeLede {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nawanWelcomeActions,
+  .nawanWelcomeStats {
+    justify-content: center;
+  }
+
+  .nawanVisualRing {
+    width: 220px;
+    height: 220px;
+  }
+
+  .nawanVisualIcon {
+    font-size: 6rem;
+  }
+}

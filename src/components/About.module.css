@@ -1,0 +1,49 @@
+.aboutContainer{
+    width: 100%;
+   
+    min-height: 46vh;
+    display: flex;
+    align-items: stretch;
+    
+    flex-direction: column-reverse;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+.container{
+    background-image: url('../assets/adout_pic.png');background-size: cover;
+    background-position: center;
+}
+.handing{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: white;
+    font-family: cursive;
+    font-weight: 600;
+}
+.History{
+    width: 100%;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 24px;
+} .HistoryBookindex{
+    font-family: var(--font-display);
+    font-size: 2.4rem;
+    color: var(--color-line);
+    font-weight: 600;
+    color: burlywood;
+    height: 100%;
+}
+.HistoryBook{
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 24px;
+    max-width: 760px;
+    padding: 50px 44px;
+}
+.HistoryBookContainer{
+    display: grid;
+    gap: 44px;
+}
+.Book{
+    font-family: cursive;
+}

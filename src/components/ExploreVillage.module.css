@@ -1,0 +1,147 @@
+.exploreSection {
+  padding: 80px 0;
+  background-color: #f6f0e2;
+}
+
+/* Heading */
+
+.heading {
+    max-width: 600px;
+    margin-bottom: 38px;
+    display: grid;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-auto-flow: row;
+    justify-items: start;
+}
+
+.subtitle {
+  margin-bottom: 10px;
+
+  color: #b65b3c;
+
+  font-family: Georgia, serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.title {
+  margin-bottom: 14px;
+
+  color: #17202a;
+
+  font-family: Georgia, serif;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.description {
+  margin: 0;
+
+  color: #4f4b43;
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Cards */
+
+.card {
+  height: 100%;
+
+  padding: 20px 18px 22px;
+
+  background-color: #fbf7ed;
+
+  border: 1px solid #dfcfaa;
+  border-radius: 8px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+
+  border-color: #c7ad7a;
+
+  box-shadow: 0 8px 20px rgba(60, 45, 25, 0.08);
+}
+
+/* Card title */
+
+.cardTitle {
+  margin-bottom: 7px;
+
+  color: #171717;
+
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Card description */
+
+.cardDescription {
+  min-height: 45px;
+
+  margin-bottom: 13px;
+
+  color: #625d54;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Visit page */
+
+.cardLink {
+  color: #b64f31;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.cardLink:hover {
+  color: #7f321f;
+
+  text-decoration: none;
+}
+
+/* Tablet */
+
+@media (max-width: 991px) {
+  .exploreSection {
+    padding: 65px 0;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .exploreSection {
+    padding: 55px 0;
+  }
+
+  .heading {
+    margin-bottom: 30px;
+  }
+
+  .title {
+    font-size: 29px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}

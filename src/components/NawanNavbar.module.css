@@ -1,0 +1,208 @@
+.nawanHeader {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Top info strip */
+.nawanTopbar {
+  background-color: var(--color-green-dark);
+  color: var(--color-cream-soft);
+  font-size: 0.8rem;
+  padding: 0.4rem 0;
+}
+
+.nawanTopbarInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nawanTagline {
+  font-style: italic;
+  opacity: 0.85;
+  letter-spacing: 0.02em;
+}
+
+.nawanTopbarContact {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-left: auto;
+}
+
+.nawanTopbarLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--color-cream-soft);
+  font-family: var(--font-body);
+}
+
+a.nawanTopbarLink:hover {
+  color: var(--color-gold-soft);
+}
+
+/* Main navbar */
+.nawanNavbar {
+  background-color: var(--color-brick);
+  box-shadow: 0 2px 10px rgba(43, 36, 32, 0.18);
+}
+
+.nawanNavbarInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 76px;
+}
+
+.nawanBrand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--color-cream-soft);
+  text-decoration: none;
+}
+
+.nawanBrandMark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-gold);
+  color: var(--color-brick-dark);
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.nawanBrandText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.nawanBrandName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.nawanBrandSub {
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-gold-soft);
+}
+
+/* Desktop links */
+.nawanlinks {
+  list-style: none;
+  display: flex;
+  gap: 2.1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nawanlink {
+  position: relative;
+  color: var(--color-cream-soft);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.98rem;
+  padding: 0.4rem 0.05rem;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.nawanlink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.nawanlink:hover {
+  color: var(--color-gold-soft);
+}
+
+.nawanlink:hover::after,
+.nawanlink.isActive::after {
+  transform: scaleX(1);
+}
+
+.nawanlink.isActive {
+  color: var(--color-gold-soft);
+}
+
+/* Mobile toggle button */
+.nawanToggle {
+  background: none;
+  border: none;
+  color: var(--color-cream-soft);
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+/* Mobile panel */
+.nawanMobilePanel {
+  max-height: 0;
+  overflow: hidden;
+  background-color: var(--color-brick-dark);
+  transition: max-height 0.3s ease;
+  width: 100%;
+}
+
+.nawanMobilePanel.isopen {
+  max-height: 100%;
+}
+
+.nawanMobileLinks {
+  list-style: none;
+  margin: 0;
+  padding: 0.75rem 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  float: left !important;
+}
+
+.nawanMobileLinks .nawanlink::after {
+  bottom: -3px;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap'); */
+
+:root {
+  --color-cream: #f7f1e4;
+  --color-cream-soft: #fffbf2;
+  --color-ink: #2b2420;
+  --color-brick: #9c3f2e;
+  --color-brick-dark: #7c3123;
+  --color-gold: #c6941e;
+  --color-gold-soft: #e2b94f;
+  --color-green: #35503f;
+  --color-green-dark: #263c2e;
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Work Sans', sans-serif;
+}
+ .nawanHeader {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; */
+  transition: transform 0.3s ease;
+}
+
+.nawanHeader.hidden {
+  transform: translateY(-100%);
+} 

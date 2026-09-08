@@ -1,0 +1,162 @@
+.footer {
+  background-color: var(--color-green-dark);
+  color: var(--color-cream-soft);
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.3fr;
+  gap: 2.5rem;
+  padding: 3.5rem 15px 2.5rem;
+}
+
+/* Brand column */
+.logoRow {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.logoMark {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--color-gold);
+  color: var(--color-brick-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.brandName {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.brandSub {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold-soft);
+}
+
+.text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  max-width: 320px;
+  margin: 0 auto 1.25rem;
+}
+
+.social {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: rgba(255, 251, 242, 0.1);
+  color: var(--color-cream-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.social a:hover {
+  background-color: var(--color-gold);
+  color: var(--color-brick-dark);
+}
+
+/* Heading used by all list columns */
+.heading {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  margin-bottom: 1.1rem;
+  color: var(--color-gold-soft);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.list a {
+  color: var(--color-cream-soft);
+  opacity: 0.85;
+}
+
+.list a:hover {
+  opacity: 1;
+  color: var(--color-gold-soft);
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  opacity: 0.9;
+}
+
+/* Bottom bar */
+.bottom {
+  border-top: 1px solid rgba(255, 251, 242, 0.12);
+  padding: 1.1rem 0;
+  font-size: 0.82rem;
+  text-align: center;
+  opacity: 0.75;
+}
+
+/* Tablet: 2 columns instead of 4 */
+@media (max-width: 991px) {
+  .top {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.5rem;
+    
+  }
+}
+
+/* Mobile: same visual style, just stacked and centered
+   so nothing looks lopsided or left-hanging */
+@media (max-width: 576px) {
+  .top {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 3rem 20px 2rem;
+    gap: 2.25rem;
+  }
+
+  .logoRow {
+    justify-content: center;
+  }
+
+  .logoRow > div {
+    text-align: left;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .list {
+    align-items: center;
+  }
+
+  .contactItem {
+    justify-content: center;
+    text-align: left;
+  }
+}
