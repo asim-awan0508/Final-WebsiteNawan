@@ -1,0 +1,17 @@
+.barContainer{
+        width: 100%;
+   
+    min-height: 46vh;
+    display: flex;
+    align-items: stretch;
+    
+    flex-direction: column-reverse;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+.topBar{
+    background-image:url('src/assets/balochground.jpg') ;
+   background-position: center;
+   background-size: cover;
+}

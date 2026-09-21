@@ -76,7 +76,7 @@ const GALLERY_ITEMS = [
 
 const Gallery = () => {
   return (
-    <section>
+    <section className={styles.GalleryContaineer}>
       {/* Banner */}
       <section className={styles.section} id="gallery">
         <div className={styles.container}>

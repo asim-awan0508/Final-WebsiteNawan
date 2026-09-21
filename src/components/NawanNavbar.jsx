@@ -11,7 +11,6 @@ const NAV_LINKS = [
   { label: 'Gallery', to: '/gallery' },
   { label: 'Community', to: '/community' },
   { label: 'Heroes', to: '/heroes' },
-  { label: 'Grounds', to: '/grounds' },
   { label: 'Sports', to: '/sports' },
   { label: 'Events', to: '/events' },
   { label: 'Project', to: '/project' },

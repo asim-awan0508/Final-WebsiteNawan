@@ -9,11 +9,9 @@ import zeeshan from '../assets/zeeshan.png'
 // Malik Rafiq / the other placeholder entries below and swap it in.
 import rafiqPic from '../assets/rafiq.jpg'
 import ibrarPic from '../assets/ibrar.jpg'
-<<<<<<< HEAD
-=======
-import akmalPic from '../assets/malikakmal.jpeg'
->>>>>>> 40dd150 (Add new team images and update Heroe/vite config)
 
+import akmalPic from '../assets/malikakmal.jpeg'
+import amirPic from '../assets/amer.jpeg'
 
 
 const HEROES = [
@@ -43,7 +41,7 @@ const HEROES = [
     ],
   },
   {
-    image: rafiqPic,
+    image: amirPic,
     role: 'Eye Specialist & Community Figure',
     name: 'Dr. Amir Awan',
     bio: 'Dr. Amir Awan is an eye specialist and the elder brother of Dr. Irfan Sahib. He is a respected member of Nawan and is also connected with Jaba Farmhouse, one of the special places associated with the community and its social life.',
@@ -69,11 +67,7 @@ const HEROES = [
     ],
   },
   {
-<<<<<<< HEAD
-    image: rafiqPic,
-=======
     image: akmalPic,
->>>>>>> 40dd150 (Add new team images and update Heroe/vite config)
     role: 'Eye Specialist & Community Figure',
     name: 'Dr. Akmal Awan',
     bio: 'Dr. Akmal Awan Sahib is an eye specialist who belongs to Nawan and currently lives in Jawabad. He is a hardworking professional who continues to serve people through his field and remains connected with his community and country.',
